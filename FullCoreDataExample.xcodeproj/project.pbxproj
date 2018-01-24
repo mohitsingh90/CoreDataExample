@@ -13,6 +13,9 @@
 		4C54043F2018D10D00D4AC3C /* FullCoreDataExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C54043D2018D10D00D4AC3C /* FullCoreDataExample.xcdatamodeld */; };
 		4C5404412018D10D00D4AC3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5404402018D10D00D4AC3C /* Assets.xcassets */; };
 		4C5404442018D10D00D4AC3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5404422018D10D00D4AC3C /* LaunchScreen.storyboard */; };
+		4C5404512018D19900D4AC3C /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5404502018D19900D4AC3C /* DatabaseController.swift */; };
+		4C5404542018D25C00D4AC3C /* Employee+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5404522018D25C00D4AC3C /* Employee+CoreDataClass.swift */; };
+		4C5404552018D25C00D4AC3C /* Employee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5404532018D25C00D4AC3C /* Employee+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		4C5404402018D10D00D4AC3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C5404432018D10D00D4AC3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C5404452018D10D00D4AC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C5404502018D19900D4AC3C /* DatabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
+		4C5404522018D25C00D4AC3C /* Employee+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4C5404532018D25C00D4AC3C /* Employee+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +62,9 @@
 		4C5404352018D10D00D4AC3C /* FullCoreDataExample */ = {
 			isa = PBXGroup;
 			children = (
+				4C5404562018D26300D4AC3C /* Model */,
 				4C5404362018D10D00D4AC3C /* AppDelegate.swift */,
+				4C5404502018D19900D4AC3C /* DatabaseController.swift */,
 				4C5404382018D10D00D4AC3C /* ViewController.swift */,
 				4C54043A2018D10D00D4AC3C /* Main.storyboard */,
 				4C5404402018D10D00D4AC3C /* Assets.xcassets */,
@@ -65,6 +73,15 @@
 				4C54043D2018D10D00D4AC3C /* FullCoreDataExample.xcdatamodeld */,
 			);
 			path = FullCoreDataExample;
+			sourceTree = "<group>";
+		};
+		4C5404562018D26300D4AC3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C5404522018D25C00D4AC3C /* Employee+CoreDataClass.swift */,
+				4C5404532018D25C00D4AC3C /* Employee+CoreDataProperties.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C5404512018D19900D4AC3C /* DatabaseController.swift in Sources */,
+				4C5404552018D25C00D4AC3C /* Employee+CoreDataProperties.swift in Sources */,
 				4C5404392018D10D00D4AC3C /* ViewController.swift in Sources */,
 				4C54043F2018D10D00D4AC3C /* FullCoreDataExample.xcdatamodeld in Sources */,
+				4C5404542018D25C00D4AC3C /* Employee+CoreDataClass.swift in Sources */,
 				4C5404372018D10D00D4AC3C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
